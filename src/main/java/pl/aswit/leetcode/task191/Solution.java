@@ -11,7 +11,7 @@ public class Solution {
         return counter;
     }
 
-    public int hammingWeightHammer(int n) {
+    public int hammingWeight32(int n) {
         String s = Integer.toBinaryString(n);
         return s.replaceAll("0", "").length();
     }
