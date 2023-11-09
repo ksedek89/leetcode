@@ -5,22 +5,23 @@ public class Solution {
     public int countSymmetricIntegers(int low, int high) {
         int counter = 0;
         for(int i = low; i<=high; i++){
-            if(isSymmetric92(i)){
+            if(isSymmetric94(i)){
                 counter++;
             }
         }
         return counter;
     }
 
-    private boolean isSymmetric92(int i) {
+    private boolean isSymmetric94(int i) {
         // 1 digit || 3 digits
         if(i / 10 == 0 || (i / 100 != 0 && i / 1000 == 0)){
             return false;
         }
         //4 digits
         if(i/1000 > 0) {
-            return i / 1000 + i / 100 % 10 == i / 10 % 10 + i % 1000 % 100 % 10;
+            return i / 1000 + i / 100 % 10 == i / 10 % 10 + i % 10;
         }else{
+        //2 digits
             return i/10 == i%10;
         }
     }
