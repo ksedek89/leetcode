@@ -2,17 +2,18 @@ package pl.aswit.leetcode.task2843;
 
 public class Solution {
 
+    //beats 94
     public int countSymmetricIntegers(int low, int high) {
         int counter = 0;
         for(int i = low; i<=high; i++){
-            if(isSymmetric94(i)){
+            if(isSymmetric90(i)){
                 counter++;
             }
         }
         return counter;
     }
 
-    private boolean isSymmetric94(int i) {
+    private boolean isSymmetric(int i) {
         // 1 digit || 3 digits
         if(i / 10 == 0 || (i / 100 != 0 && i / 1000 == 0)){
             return false;
@@ -26,7 +27,7 @@ public class Solution {
         }
     }
 
-
+    //beats 90
     private boolean isSymmetric90(int i) {
         String value = String.valueOf(i);
         if(value.length() % 2  == 1){

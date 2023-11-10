@@ -2,6 +2,7 @@ package pl.aswit.leetcode.task191;
 
 public class Solution {
 
+    //beats 100%
     public int hammingWeight(int n) {
         int counter = 0;
         while (n != 0){
