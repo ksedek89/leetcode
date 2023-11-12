@@ -16,7 +16,6 @@ public class Solution {
         return null;
     }
 
-//    dodać zakładkę żeby napisać własną funkcję
     boolean containsZero(int num) {
         if(num == 0)
             return true;
