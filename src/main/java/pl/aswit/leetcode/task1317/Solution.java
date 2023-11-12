@@ -10,23 +10,18 @@ public class Solution {
     public int[] getNoZeroIntegers(int n) {
         int counter = 0;
         while (counter++ < n){
-            if(!containsZero(counter) && !containsZero(n-counter))
+            if(!containsNumber(counter, 10) && !containsNumber(n-counter, 10))
                 return new int[]{counter, n-counter};
         }
         return null;
     }
 
-    boolean containsZero(int num) {
-        if(num == 0)
-            return true;
-
-        if(num < 0)
-            num = -num;
-
+    boolean containsNumber(int num, int number) {
         while(num > 0) {
-            if(num % 10 == 0)
+            if(num % 10 == number){
                 return true;
-            num /= 10;
+            }
+            num = num / 10;
         }
         return false;
     }
