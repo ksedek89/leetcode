@@ -9,18 +9,18 @@ public class Test1379 {
         var solution = new Solution();
 
 
-        TreeNode tree15 = new TreeNode(15);
-        TreeNode tree28 = new TreeNode(28);
-        TreeNode tree55 = new TreeNode(55);
-        TreeNode tree70 = new TreeNode(70);
-        TreeNode tree25 = new TreeNode(25, tree15, tree28);
-        TreeNode tree35 = new TreeNode(35);
-        TreeNode tree45 = new TreeNode(45);
-        TreeNode tree60 = new TreeNode(60, tree55, tree70);
-        TreeNode tree30 = new TreeNode(30, tree25, tree35);
-        TreeNode tree50 = new TreeNode(50, tree45, tree60);
-        TreeNode tree40 = new TreeNode(40, tree30, tree50);
-        assertThat(solution.getTargetCopy(tree40, tree15, tree70)).isEqualTo(3);
+        TreeNode tree19 = new TreeNode(19);
+        TreeNode tree19c = new TreeNode(19);
+        TreeNode tree6 = new TreeNode(6);
+        TreeNode tree6c = new TreeNode(6);
+        TreeNode tree3 = new TreeNode(3, tree6, tree19);
+        TreeNode tree3c = new TreeNode(3, tree6c, tree19c);
+        TreeNode tree4 = new TreeNode(4);
+        TreeNode tree4c = new TreeNode(4);
+
+        TreeNode tree7 = new TreeNode(7, tree4, tree3);
+        TreeNode tree7c = new TreeNode(7, tree4c, tree3c);
+        assertThat(solution.getTargetCopy(tree7, tree7c, tree3)).isEqualTo(tree3c);
 
     }
 
