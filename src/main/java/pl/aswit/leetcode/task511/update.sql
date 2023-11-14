@@ -1,0 +1,1 @@
+select player_id,  TO_CHAR( min(event_date), 'yyyy-mm-dd') first_login from activity group by player_id
