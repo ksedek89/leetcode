@@ -3,7 +3,7 @@ package pl.aswit.leetcode.task1260;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-public class Test1260 {
+public class Test {
 
     public static void main(String[] args) {
         var solution = new Solution();

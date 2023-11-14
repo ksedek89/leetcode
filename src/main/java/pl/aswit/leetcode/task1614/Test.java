@@ -3,7 +3,7 @@ package pl.aswit.leetcode.task1614;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-public class Test1614 {
+public class Test {
     public static void main(String [] args){
         var solution = new Solution();
         assertThat(solution.maxDepth("(1+(2*3)+((8)/4))+1")).isEqualTo(3);

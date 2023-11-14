@@ -2,7 +2,7 @@ package pl.aswit.leetcode.task2446;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-public class Test2446 {
+public class Test {
     public static void main(String [] args){
         var solution = new Solution();
         assertThat(solution.haveConflict(new String[]{"01:15", "02:00"}, new String[]{"02:00","03:00"})).isEqualTo(true);

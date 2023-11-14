@@ -48,7 +48,7 @@ signed int:
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-public class Test191 {
+public class Test {
     public static void main(String [] args){
         var solution = new Solution();
         assertThat(solution.hammingWeight(00000000000000000000000000001011)).isEqualTo(3);

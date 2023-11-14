@@ -2,7 +2,7 @@ package pl.aswit.leetcode.task2833;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-public class Test2843 {
+public class Test {
     public static void main(String [] args){
         var solution = new Solution();
         assertThat(solution.furthestDistanceFromOrigin("L_RL__R")).isEqualTo(3);
