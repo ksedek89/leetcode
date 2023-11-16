@@ -7,7 +7,7 @@ public class Test {
     public static void main(String [] args){
         var solution = new Solution();
 
-/*        ListNode listNode3 = new ListNode(3);
+        ListNode listNode3 = new ListNode(3);
         ListNode listNode4 = new ListNode(4, listNode3);
         ListNode listNode2 = new ListNode(2, listNode4);
 
@@ -19,10 +19,10 @@ public class Test {
         ListNode listNode0 = new ListNode(0, listNode8);
         ListNode listNode7 = new ListNode(7, listNode0);
 
-        assertThat(solution.addTwoNumbers(listNode2, listNode5)).isEqualTo(listNode7);*/
+        assertThat(solution.addTwoNumbers(listNode2, listNode5)).isEqualTo(listNode7);
 
 
-        ListNode listNode9 = new ListNode(9);
+/*        ListNode listNode9 = new ListNode(9);
         ListNode listNode99 = new ListNode(9, listNode9);
         ListNode listNode999 = new ListNode(9,listNode99 );
         ListNode listNode9999 = new ListNode(9, listNode999);
@@ -31,7 +31,7 @@ public class Test {
         ListNode listNode9999999 = new ListNode(9, listNode999999);
 
 
-        assertThat(solution.addTwoNumbers(listNode9999999, listNode9999)).isEqualTo(listNode9);
+        assertThat(solution.addTwoNumbers(listNode9999999, listNode9999)).isEqualTo(listNode9);*/
 
 
 //        assertThat(solution.addTwoNumbers(new ListNode(0), new ListNode(0))).isEqualTo(new ListNode(0));

@@ -3,33 +3,35 @@ package pl.aswit.leetcode.medium.task2;
 
 public class Solution {
 
+    //beats 100%
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
-        ListNode dummyNode = new ListNode(0);
-        ListNode curr = dummyNode;
-        int carry = 0;
+        ListNode output = new ListNode();
+        ListNode last = output;
+        output.next = last;
+        int rest = 0;
+        while (l1 != null || l2!= null || rest != 0){
+            int val1 = l1 != null ? l1.val : 0;
+            int val2 = l2 != null ? l2.val : 0;
 
-        while (l1 != null || l2 != null || carry != 0) {
-            int currSum = 0;
+            int sum = val1 + val2 + rest;
+            int digit = sum % 10;
+            rest = (sum >= 10) ? 1 : 0;
 
-            if (l1 != null) {
-                currSum += l1.val;
+            ListNode listNode = new ListNode(digit);
+            last.next = listNode;
+            last = listNode;
+
+
+            if(l1!=null){
                 l1 = l1.next;
             }
-
-            if (l2 != null) {
-                currSum += l2.val;
+            if(l2!=null){
                 l2 = l2.next;
             }
 
-            currSum += carry;
-            carry = currSum / 10;
-            currSum %= 10;
-
-            curr.next = new ListNode(currSum);
-            curr = curr.next;
         }
+        return output.next;
 
-        return dummyNode.next;
     }
 
     //beats 6%
