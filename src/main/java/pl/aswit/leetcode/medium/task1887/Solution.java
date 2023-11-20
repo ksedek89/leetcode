@@ -15,8 +15,8 @@ public class Solution {
         int res = 0, operations = 0;
         for (int i = 50000; i >= 1; i--) {
             if (freq[i] > 0) {
+                res += operations;
                 operations += freq[i];
-                res += operations - freq[i];
             }
         }
         return res;
@@ -24,7 +24,7 @@ public class Solution {
 
 
     //beats 9%
-    public int reductionOperationsSlower(int[] nums) {
+    public int reductionOperationsSlowergit (int[] nums) {
         int noOfOperations = 0;
         TreeMap<Integer, Integer> treeMap = new TreeMap();
 
