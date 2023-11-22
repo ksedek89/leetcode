@@ -1,6 +1,7 @@
 package pl.aswit.leetcode.easy.task1379;
 
 
+import pl.aswit.leetcode.utils.TreeNode;
 
 public class Solution {
 
@@ -26,14 +27,3 @@ public class Solution {
 
 }
 
-  class TreeNode {
-     int val;
-     TreeNode left;
-     TreeNode right;
-      TreeNode(int x) { val = x; }
-      TreeNode(int val, TreeNode left, TreeNode right) {
-          this.val = val;
-          this.left = left;
-          this.right = right;
-      }
-  }

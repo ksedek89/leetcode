@@ -1,6 +1,8 @@
 package pl.aswit.leetcode.easy.task94;
 
 
+import pl.aswit.leetcode.utils.TreeNode;
+
 import java.util.List;
 
 import static org.assertj.core.api.Assertions.assertThat;
