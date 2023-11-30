@@ -1,6 +1,8 @@
 package pl.aswit.leetcode.medium.task2;
 
 
+import pl.aswit.leetcode.utils.ListNode;
+
 import static org.assertj.core.api.Assertions.assertThat;
 
 public class Test {

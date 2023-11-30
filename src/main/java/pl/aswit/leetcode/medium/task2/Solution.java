@@ -1,6 +1,8 @@
 package pl.aswit.leetcode.medium.task2;
 
 
+import pl.aswit.leetcode.utils.ListNode;
+
 public class Solution {
 
     //beats 100%
@@ -123,10 +125,3 @@ public class Solution {
     }
 }
 
-class ListNode {
-    int val;
-    ListNode next;
-    ListNode() {}
-    ListNode(int val) { this.val = val; }
-    ListNode(int val, ListNode next) { this.val = val; this.next = next; }
-}
