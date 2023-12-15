@@ -8,7 +8,7 @@ public class Test {
         var solution = new Solution();
 
 
-        assertThat(solution.findMedianSortedArrays(new int[]{1,2}, new int[]{3,4})).isEqualTo(2);
+        assertThat(solution.findMedianSortedArrays(new int[]{1,2}, new int[]{3,4})).isEqualTo(2.5);
 
     }
 
