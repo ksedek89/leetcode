@@ -1,40 +1,40 @@
 package pl.aswit.leetcode.medium.task15;
 
-import java.util.*;
+
+import java.util.Arrays;
 
 public class Solution {
 
-
-    public List<List<Integer>> threeSum(int[] nums) {
-        Set<List<Integer>> set = new HashSet<>();
+    public int threeSumClosest(int[] nums, int target) {
+        int result = Integer.MAX_VALUE;
         Arrays.sort(nums);
 
         for (int i = 0; i < nums.length; i++) {
             int left = 0;
-            int right = nums.length-1;
-            while (left < right)
-            {
-                if(left == i){
+            int right = nums.length - 1;
+            while (left < right) {
+                if (left == i) {
                     left++;
-                }else if(right == i){
+                    continue;
+                } else if (right == i) {
                     right--;
-                }else if(nums[left] + nums[right] + nums[i] > 0){
-                    right--;
-                }else if(nums[left] + nums[right] + nums[i] < 0){
-                    left++;
-                }else{
-                    if(i <= left){
-                        set.add(List.of(nums[i],nums[left],nums[right]));
-                    }else if(i > right){
-                        set.add(List.of(nums[left],nums[right],nums[i]));
-                    }else{
-                        set.add(List.of(nums[left],nums[i],nums[right]));
-                    }
-                   left++;right--;
+                    continue;
                 }
+                int currentTotal = nums[left] + nums[right] + nums[i];
+                if(Math.abs(currentTotal - target) <= Math.abs(result-target)){
+                    result = currentTotal;
+                }
+                if (result == target) {
+                    return target;
+                } else if (currentTotal > target) {
+                    right--;
+                } else {
+                    left++;
+                }
+
             }
         }
-        return new ArrayList<>(set);
+        return result;
     }
 }
 
