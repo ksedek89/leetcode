@@ -24,16 +24,10 @@ public class Solution {
     }*/
 
     public int findComplement(int num) {
-        int mask = 0;
-        int n = num;
-
-        // Build a mask with 1s in positions corresponding to the binary digits of num
-        while (n > 0) {
-            n /= 2;
-            mask = (mask << 1) + 1;
+        int n = 0;
+        while (n < num) {
+            n = (n << 1) | 1;
         }
-
-        // XOR the num with the mask to get the complement
-        return num ^ mask;
+        return n - num;
     }
 }
