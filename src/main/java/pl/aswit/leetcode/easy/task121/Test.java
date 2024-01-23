@@ -1,14 +1,13 @@
-package pl.aswit.leetcode.medium.task70;
+package pl.aswit.leetcode.easy.task121;
 
 
-import java.io.IOException;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
 public class Test {
     public static void main(String [] args){
         var solution = new Solution();
-        assertThat(solution.climbStairs(5)).isEqualTo(8);
+        assertThat(solution.maxProfit(new int[] {7,1,5,3,6,4})).isEqualTo(5);
 
     }
 
