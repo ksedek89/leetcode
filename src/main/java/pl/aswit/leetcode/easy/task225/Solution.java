@@ -1,4 +1,4 @@
-package pl.aswit.leetcode.easy.task231;
+package pl.aswit.leetcode.easy.task225;
 
 
 
