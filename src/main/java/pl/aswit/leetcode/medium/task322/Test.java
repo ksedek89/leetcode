@@ -1,4 +1,4 @@
-package pl.aswit.leetcode.medium.task198;
+package pl.aswit.leetcode.medium.task322;
 
 
 import java.io.IOException;
