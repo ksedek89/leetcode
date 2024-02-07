@@ -7,6 +7,8 @@ public class Test {
 
     public static void main(String [] args){
         var solution = new Solution();
+
+        int a = 424;
         assertThat(solution.smallestRangeI(new int[]{1,3,6}, 3)).isEqualTo(0);
         assertThat(solution.smallestRangeI(new int[]{0,10}, 2)).isEqualTo(6);
         assertThat(solution.smallestRangeI(new int[]{1}, 0)).isEqualTo(0);
