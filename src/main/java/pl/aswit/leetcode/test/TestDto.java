@@ -3,7 +3,7 @@ package pl.aswit.leetcode.test;
 import java.util.HashSet;
 import java.util.Objects;
 
-public class TestDto {
+public class TestDto implements Comparable<TestDto>{
 
     private String test;
 
@@ -30,5 +30,10 @@ public class TestDto {
 
     public void setTest(String test) {
         this.test = test;
+    }
+
+    @Override
+    public int compareTo(TestDto o) {
+        return -1;
     }
 }
